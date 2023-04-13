@@ -1,4 +1,4 @@
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import React from 'react';
 
 function App() {
@@ -31,13 +31,13 @@ function App() {
 
   // Trying to implement the RETURN section using React.createElement()
 
-  return React.createElement('div', {}, React.createElement(Expenses, { items: expenses }));
+  // return React.createElement('div', {}, React.createElement(Expenses, { items: expenses }));
 
-  // return (
-  //   <>
-  //     <Expenses items={expenses}/>
-  //   </>
-  // );
+  return (
+    <>
+      <Expenses items={expenses}/>
+    </>
+  );
 }
 
 export default App;
