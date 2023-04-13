@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses";
+import React from 'react';
 
 function App() {
   const expenses = [
@@ -28,11 +29,15 @@ function App() {
     },
   ];
 
-  return (
-    <>
-      <Expenses items={expenses}/>
-    </>
-  );
+  // Trying to implement the RETURN section using React.createElement()
+
+  return React.createElement('div', {}, React.createElement(Expenses, { items: expenses }));
+
+  // return (
+  //   <>
+  //     <Expenses items={expenses}/>
+  //   </>
+  // );
 }
 
 export default App;
