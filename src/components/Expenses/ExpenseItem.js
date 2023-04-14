@@ -8,7 +8,7 @@ export default function ExpenseItem(props) {
   const clickHandler = () => {
     title = 'Something something';
     console.log("Just clicked");
-  }
+  };
 
   return (
     <Card className="expense-item" >
