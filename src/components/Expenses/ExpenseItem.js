@@ -7,7 +7,7 @@ export default function ExpenseItem(props) {
   let title = props.title;
   const clickHandler = () => {
     title = 'Something something';
-    console.log("Just clicked");
+    console.log(title);
   };
 
   return (
